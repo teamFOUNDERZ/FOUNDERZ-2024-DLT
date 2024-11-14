@@ -51,7 +51,7 @@ class FounderzAgreementChainCode implements ContractInterface {
             throw new ChaincodeException("key." + key + " Agreement already exists");
         }
         ctx.getStub().putStringState(key, value);
-        return "저장 완료";
+        return "completed mint process!";
     }
 
     /**
