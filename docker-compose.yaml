@@ -37,6 +37,7 @@ services:
     ports:
       - 7050:7050
     volumes:
+      - ./channel-artifacts:/var/hyperledger/orderer
       - ./crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/:/var/hyperledger/orderer
     networks:
       - fabric-network
